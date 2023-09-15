@@ -117,7 +117,7 @@ export default function Home() {
                     </section>
                     <section className="mx-6 my-4 text-xl">
                         <p>
-                            Something more about me: I can't choose a color palette nor find a pic of me :(
+                            Something more about me
                         </p>
                         <p className="mt-5">
                             ahhhhhh
