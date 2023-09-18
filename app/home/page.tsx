@@ -120,7 +120,10 @@ export default function Home() {
                             Something more about me
                         </p>
                         <p className="mt-5">
-                            ahhhhhh
+                            Computational Media Major
+                        </p>
+                        <p className="mt-5">
+                            Georgia Institute of Technology
                         </p>
                     </section>
                 </div>
@@ -129,5 +132,5 @@ export default function Home() {
     </div>
     
     )
-
-}
+  
+  }
