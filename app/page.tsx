@@ -1,113 +1,133 @@
-import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+  <div>
+      <nav
+      className="relative flex w-full flex-nowrap items-center justify-between bg-[#332447] py-2 shadow-lg focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+      data-te-navbar-ref>
+      <div className="flex w-full flex-wrap items-center justify-between px-3">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+          className="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+          href="#">
+          <img
+          className="mr-4 h-[40px] rounded-full"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/1200px-A_black_image.jpg"
+          alt="TE Logo"
+          loading="lazy" />
+          <span className="text-3xl font-semibold dark:text-neutral-200 mr-4"
+          >Home
+          </span>
           </a>
-        </div>
+          <button
+          className="block border-0 bg-transparent px-2 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+          type="button"
+          data-te-collapse-init
+          data-te-target="#navbarSupportedContent3"
+          aria-controls="navbarSupportedContent3"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span className="[&>svg]:w-7">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-7 w-7">
+              <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd" />
+              </svg>
+          </span>
+          </button>
+          <div
+          className="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+          id="navbarSupportedContent3"
+          data-te-collapse-item>
+          <ul
+              className="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+              data-te-navbar-nav-ref>
+              <li
+              className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+              data-te-nav-item-ref>
+              <a
+                  className="p-0 transition duration-200 hover:text-neutral-700 
+                              hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 
+                              motion-reduce:transition-none dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 
+                              [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="/home"
+                  data-te-nav-link-ref
+                  >Home
+                  </a>
+              </li>
+              <li
+              className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+              data-te-nav-item-ref>
+              <a
+                  className="p-0 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="/skills"
+                  data-te-nav-link-ref
+                  >Skills
+                  </a>
+              </li>
+              <li
+              className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+              data-te-nav-item-ref>
+              <a
+                  className="p-0 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="/projects"
+                  data-te-nav-link-ref
+                  >Projects
+                  </a>
+              </li>
+              <li
+              className="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+              data-te-nav-item-ref>
+              <a
+                  className="p-0 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="/involvements"
+                  data-te-nav-link-ref
+                  >Involvements
+                  </a>
+              </li>
+          </ul>
+          <span className="ml-2 mr-4">
+              Xavier Genio
+          </span>
+          </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      </nav>
+      <div className="mx-[10vw] my-4 flex flex-col bg-[#2c292f] rounded-3xl border-2 border-purple-200">
+          <section>
+              <h1 className="rounded-xl border-dashed border-front border-[#493562] border-4 p-2 text-5xl text-center mx-16 my-6 font-semibold">Xavier Genio</h1>
+          </section>
+          <div className="flex flex-row">
+              <div className="basis-1/3">
+                  <section className="p-9">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/1200px-A_black_image.jpg" className="rounded-full"/>
+                  </section>
+              </div>
+              <div className="basis-2/3">
+                  <section className="text-4xl p-2 mx-4 my-2 bg-[#332447] border-dashed border-4 border-[#493562] rounded-3xl">
+                      <h1 className="mx-4 my-2 font-semibold text-centered font-[#F5AE52]">
+                          About Me{" "}
+                      </h1>
+                      {/* <span className="font-mono mx-8 text-xl">
+                          Hello world!
+                      </span> */}
+                  </section>
+                  <section className="mx-6 my-4 text-xl">
+                      <p>
+                          Something more about me
+                      </p>
+                      <p className="mt-5">
+                          ahhhhhh
+                      </p>
+                  </section>
+              </div>
+          </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+  </div>
+  
   )
+
 }
