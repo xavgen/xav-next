@@ -116,9 +116,6 @@ export default function Home() {
                         </span> */}
                     </section>
                     <section className="mx-6 my-4 text-xl">
-                        <p>
-                            Something more about me
-                        </p>
                         <p className="mt-5">
                             Computational Media Major
                         </p>
